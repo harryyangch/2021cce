@@ -1,7 +1,10 @@
 # 2021cce
 
 hw
+
 1
+![1](https://user-images.githubusercontent.com/79676969/109654428-25d91e00-7b9d-11eb-8e87-6788a11f34a4.png)
+
 ```c
 #include <stdio.h>
 int main()
@@ -12,6 +15,8 @@ int main()
 }
 ```
 2
+![2](https://user-images.githubusercontent.com/79676969/109654485-325d7680-7b9d-11eb-9ec6-16f584885cb3.png)
+
 ```c
 #include <stdio.h>
 int main()
@@ -22,6 +27,8 @@ int main()
 }
 ```
 3
+![3](https://user-images.githubusercontent.com/79676969/109654523-3d180b80-7b9d-11eb-9309-a696a0817ca4.png)
+
 ```c
 #include <stdio.h>
 int main()
@@ -36,6 +43,8 @@ int main()
 
 ```
 4
+![4](https://user-images.githubusercontent.com/79676969/109654534-40ab9280-7b9d-11eb-9db5-85925217c921.png)
+
 ```c
 #include <stdio.h>
 int main()
@@ -50,6 +59,8 @@ int main()
 }
 ```
 5
+![5](https://user-images.githubusercontent.com/79676969/109654548-430dec80-7b9d-11eb-98a1-c2f5dbdf7ca4.png)
+
 ```c
 #include <stdio.h>
 int main()
