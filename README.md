@@ -158,3 +158,83 @@ int main()
 	printf("%d\n",ans);
 }
 ```
+------------------------------------------------------------------------------------------------------------------
+1.
+![week03-1](https://user-images.githubusercontent.com/79676969/111619437-89f81500-8820-11eb-84da-32fe48107fb9.png)
+```c
+#include <stdio.h>
+int main()
+{
+	int a[5]={0,10,20,30,40};
+	int *p=&a[2];
+	*p=222;
+	
+	p=p+2;
+	*p=666;
+}
+```
+2.
+![week03-2](https://user-images.githubusercontent.com/79676969/111619700-d9d6dc00-8820-11eb-94b1-a3dffd41f9af.png)
+```c
+#include <stdio.h>
+int a[5]={0,10,20,30,40};
+void printAll(){
+	for(int i=0;i<5;i++0 printf"%d",a[i]);
+	printf("\n");
+}
+int main()
+{
+		printAll();
+	int *p=&a[2];
+	*p=222;
+		printAll();
+	p=p+2;
+	*p=666;
+		printAll();
+	p--;
+	*p=555;
+		printAll();
+}
+```
+3.
+![week03-3](https://user-images.githubusercontent.com/79676969/111619765-e8bd8e80-8820-11eb-8854-27fb24b71d4a.png)
+
+```c
+#include <stdio.h>
+int a[5]={0,10,20,30,40};
+void printAll(){
+	for(int i=0;i<5;i++0 printf"%d",a[i]);
+	printf("\n");
+}
+int main()
+{
+		printAll();
+	int *p=&a[2];
+	*p=222;
+		printAll();
+		printf("p心裡小紙條記的值是:%d\n",p);
+	p=p+2;
+	*p=666;
+		printAll();
+		printf("p心裡小紙條記的值是:%d\n",p);
+	p--;
+	*p=555;
+		printAll();
+		printf("p心裡小紙條記的值是:%d\n",p);
+}
+```
+4.
+![week03-4](https://user-images.githubusercontent.com/79676969/111619819-f5da7d80-8820-11eb-98c8-ff8bb4d76e43.png)
+```c
+#include <stdio.h>
+#include <stdiib.h>
+int a[10];
+int main()
+{
+	int b[10];
+	int *p=(int*) malloc(sizeof(int)*10);
+
+	return 0;
+}
+
+```
