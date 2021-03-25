@@ -160,7 +160,7 @@ int main()
 ```
 ------------------------------------------------------------------------------------------------------------------
 1.
-![week03-1](https://user-images.githubusercontent.com/79676969/111619437-89f81500-8820-11eb-84da-32fe48107fb9.png)
+![week04-1](https://user-images.githubusercontent.com/79676969/112484395-db6e4a00-8db4-11eb-9100-f1458c902de6.png)
 ```c
 #include <stdio.h>
 int main()
