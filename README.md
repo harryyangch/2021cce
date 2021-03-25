@@ -240,7 +240,8 @@ int main()
 ```
 ----------------------------------------------------------------------------------------
 #week 04
-1.       
+1.       ![Uploading week04-1.png…]()
+
 #include <stdio.h>
 struct POINT{
     float x,y;
@@ -251,10 +252,32 @@ int main(){
 
     return 0;
 }
-![Uploading week04-1.png…]()
+2.![week04-2](https://user-images.githubusercontent.com/79676969/112483889-69960080-8db4-11eb-85d1-04859f75b6ba.png)
+```c
+#include <stdio.h>
+struct POINT{
+    float x,y;
+};
+int main(){
+    struct POINT a={4.1,3.2};
+    printf("%f%f\n",a.x,a.y);
 
+  
+}
+```
+3.![week04-3](https://user-images.githubusercontent.com/79676969/112484054-90eccd80-8db4-11eb-8dd7-ccda07d29b14.png)
+```c
+#include <stdio.h>
+struct POINT{
+    float x,y;
+};
+int main(){
+    struct POINT a={4.1,3.2};
+    printf("%f%f\n",a.x,a.y);
 
-
+    return 0;
+}
+```
 
 4.![week04-4](https://user-images.githubusercontent.com/79676969/111726234-7d68d080-88a3-11eb-9dc7-84a92a0d0f4d.png)
 ```c
