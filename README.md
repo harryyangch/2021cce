@@ -321,4 +321,9 @@ int main()
    printf("%.2f %.2f %.2f\n",p->x,p->y,p->z);
 }
 ```
+week 7
 
+
+![week07-2](https://user-images.githubusercontent.com/79676969/114888180-95e4f000-9e3b-11eb-9806-75e10100ce3c.png)
+
+![week07-3](https://user-images.githubusercontent.com/79676969/114888216-9b423a80-9e3b-11eb-9217-a19055316948.png)
