@@ -339,6 +339,7 @@ week8
 ----------------------------------------------------------------------------------------
 week10
 
+1.
 ```c
 #include <stdio.h>
 int main()
@@ -358,6 +359,29 @@ int main()
 }
 ```
 ![week10-1](https://user-images.githubusercontent.com/79676969/116642805-41488580-a9a2-11eb-8b9d-ac0f35d92435.png)
+
+2.
+```c
+#include <stdio.h>
+int main()
+{
+	int T;
+	scanf("%d\n\n",&T);
+	
+	for(int t=0;t<T;t++){
+		int N=0;
+		while(gets(line)!=NULL){
+			if(strcmp(line,"")==0) break;
+			
+			//printf("%s\n",line);
+			N++;
+		}
+		printf("有幾棵樹?%d\n",N);
+		printf("====分隔線=====\n");
+	}
+}
+```
+![week10-2](https://user-images.githubusercontent.com/79676969/116643552-e152de80-a9a3-11eb-9f45-12d9df7a6e9d.png)
 
 
 
