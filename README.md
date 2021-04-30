@@ -414,6 +414,45 @@ int main()
 ```
 ![week10-3](https://user-images.githubusercontent.com/79676969/116643839-7ce44f00-a9a4-11eb-9500-9ba51e7ef8a8.png)
 
+4.
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char line[1000];
+char tree[1000000][32];
+int compare(const void*p1,const void*p2){
+	return strcmp((char*)p1,(char*)p2);
+}
+int main()
+{
+	int T;
+	scanf("%d\n\n",&T);
+	
+	for(int t=0;t<T;t++){
+		int N=0;
+		while(gets(line)!=NULL){
+			if(strcmp(line,"")==0) break;
+			
+			strcpy(tree[N],line);
+			//printf("%s\n",line);
+			N++;
+		}
+		printf("有幾棵樹?%d\n",N);
+		
+		qsort(tree,N,32,compare);
+		
+		for(int i=0;i<N;i++){
+			printf("%s\n",tree[i]);
+		}
+		printf("====分隔線=====\n");
+	}
+}
+```
+![week10-4](https://user-images.githubusercontent.com/79676969/116644851-0ac13980-a9a7-11eb-8dae-d31d6f3acc16.png)
+
+
+
 
 
 
