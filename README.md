@@ -498,4 +498,53 @@ int main()
 
 ![week10-5](https://user-images.githubusercontent.com/79676969/116645891-5d035a00-a9a9-11eb-8dbe-36e7714c6bf1.png)
 
+6.
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char line[1000];
+char tree[1000000][32];
+int compare(const void*p1,const void*p2){
+	return strcmp((char*)p1,(char*)p2);
+}
+int main()
+{
+	int T;
+	scanf("%d\n\n",&T);
+	
+	for(int t=0;t<T;t++){
+		int N=0;
+		while(gets(line)!=NULL){
+			if(strcmp(line,"")==0) break;
+			
+			strcpy(tree[N],line);
+			//printf("%s\n",line);
+			N++;
+		}
+		//printf("有幾棵樹?%d\n",N);
+		
+		qsort(tree,N,32,compare);
+		
+		if(t>0) printf("\n");
+		int ans=1;
+		printf("%s ",tree[0]);
+		for(int i=0;i<N-1;i++){
+			if(strcmp(tree[i],tree[i+1])==0){
+				ans++;
+			}else{
+				printf("%.4f\n",100*ans/(float)N);
+				ans=1;
+				printf("%s ",tree [i+1]);
+			}
+			//printf("%s\n",tree[i]);
+		}
+		printf("%.4f\n",100*ans/(float)N);
+		//printf("====分隔線=====\n");
+	}
+}
+```
 
+
+
+![week10-6](https://user-images.githubusercontent.com/79676969/116646960-021f3200-a9ac-11eb-8dbb-aaa80876779e.png)
