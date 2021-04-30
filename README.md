@@ -336,3 +336,28 @@ week8
 ![week08-7](https://user-images.githubusercontent.com/79676969/115737033-5c256380-a3be-11eb-8159-cca9040f25c0.png)
 
 
+----------------------------------------------------------------------------------------
+week10
+
+```c
+#include <stdio.h>
+int main()
+{
+	int T;
+	scanf("%d\n\n",&T);
+	
+	for(int t=0;t<T;t++){
+		int N=0;
+		while(gets(line)!=NULL){
+			if(strcmp(line,"")==0) break;
+			
+			printf("%s\n",line);
+		}
+		printf("====分隔線=====\n");
+	}
+}
+```
+![week10-1](https://user-images.githubusercontent.com/79676969/116642805-41488580-a9a2-11eb-8b9d-ac0f35d92435.png)
+
+
+
