@@ -638,6 +638,38 @@ int main()
 ```
 ![Uploading week11-3.png…]()
 
+4.
+```c
+#include <stdio.h>
+typedef struct data{
+    int ans;
+    char c;
+}DATA;
+struct data box;
+DATA box;
+int main()
+{
+    box.ans=1;
+    box.c='A';
+
+    printf("%c %d\n",box.c,box.ans);
+}
+
+
+```
+![week11-4](https://user-images.githubusercontent.com/79676969/117391593-cd1e5c80-af22-11eb-90e0-b24b7f8302da.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
