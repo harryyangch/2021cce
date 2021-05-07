@@ -548,3 +548,84 @@ int main()
 
 
 ![week10-6](https://user-images.githubusercontent.com/79676969/116646960-021f3200-a9ac-11eb-8dbb-aaa80876779e.png)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+week11
+
+1.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int a[10]={4,8,3,7,2,9,1,6,10};
+
+int compare(const void*p1,const void*p2){
+    int d1=*(int*)p1;
+    int d2=*(int*)p2;
+    if(d1>d2) return 1;
+    if(d1==d2) return 0;
+    if(d1<d2) return -1;
+}
+int main()
+{
+    qsort(a,10,sizeof(int),compare);
+    for(int i=0;i<10;i++){
+        printf("%d ",a[i]);
+    }
+}
+
+```
+![week11-1](https://user-images.githubusercontent.com/79676969/117386982-7f055b00-af1a-11eb-8af4-0250a706daab.png)
+
+2.
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char a[2000][80];
+char temp[80];
+int compare(const void*p1,const void*p2){
+	char*s1=(char*)p1;
+	char*s2=(char*)p2;
+	
+	int result=strcmp(s1,s2);
+	if(result>0) return 1;
+	if(result==0) return 0;
+	if(result<0) return -1; 
+}
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%s",a[i]);
+		gets(temp);
+	}
+	
+	qsort(a,n,80,compare);
+	
+	int ans=1;
+	printf("%s ",a[0]);
+	
+	for(int i=0;i<n-1;i++){
+		if(strcmp(a[i],a[i+1])!=0){
+			printf("%d\n",ans);
+			printf("%s ",a[i+1]);
+			ans=1;
+		}
+		else ans++;
+	}
+	printf("%d\n",ans);
+}
+```
+![week11-2](https://user-images.githubusercontent.com/79676969/117386999-8c224a00-af1a-11eb-815a-a11b4a472e41.png)
+
+
+
+
+
+
+
+
+
+
+
