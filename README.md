@@ -692,6 +692,40 @@ void draw(){
 
 ![week13-6](https://user-images.githubusercontent.com/79676969/119826495-aacc9d00-bf2a-11eb-9f38-c998e03e2f34.png)
 
+-------------------------------------------------------------------------------------------------------------------------------------
+week15
+
+```c
+int []a=new int[49];
+void setup(){
+  size(400,200);
+  textSize(30);
+  for(int i=0;i<49;i++) a[i]=i+1;
+  for(int i=0;i<10000;i++){
+    int i1=(int)random(49),i2=(int)random(49);
+    int temp=a[i1];a[i1]=a[i2];a[i2]=temp;
+}
+int N=0,rolling=0;
+void draw(){
+  background(#2C9CF0);
+  for(int i=0;i<N;i++){
+    int x=50+i*50;
+    if(i==N-1&&rolling>0){
+      x+=rolling;
+      rolling=-3;
+    }
+   fill(255);ellipse(50+i*50,100,40,40);
+   textAlign(CENTER,CENTER);
+   fill(0); text(a[i],50+i*50,100);
+ }
+}
+void mousePressed(){
+ N++;
+ rolling=500;
+}
+```
+![4](https://user-images.githubusercontent.com/79676969/120637615-b4fa1880-c4a1-11eb-9c6a-168c4227cb33.png)
+
 
 
 
