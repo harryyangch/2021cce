@@ -727,9 +727,28 @@ void mousePressed(){
 ![4](https://user-images.githubusercontent.com/79676969/120637615-b4fa1880-c4a1-11eb-9c6a-168c4227cb33.png)
 
 
+------------------------------------------------------------------------------------------------------------------------------------
 
+week15
 
-
+```c
+import processing.sound.*;
+SoundFile player;
+void setup(){
+  size(400,200);
+  textSize(40);
+  player = new SoundFile(this, "tada.mp3");
+}
+void draw(){
+  background(41,114,191);
+  int s=second();
+  text(9-s%10,100,100);
+  if(9-s%10==0&&!player.isPlaying()){
+    player.play();
+  }
+}
+```
+![5](https://user-images.githubusercontent.com/79676969/121529115-a9bd6480-ca2e-11eb-8b54-b8356b48532c.png)
 
 
 
