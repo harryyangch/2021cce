@@ -786,6 +786,40 @@ void draw(){
 
 ![7](https://user-images.githubusercontent.com/79676969/122404045-78561300-cfb1-11eb-8db4-41bcd580174a.png)
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+week17
+
+```c
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String[]Q={"hello","world","other"};
+int Qi=0;
+void draw(){
+  background(0);
+  text("Score: "+score,100,50);
+  text("Q: "+Q[Qi],  100,100);
+  text("A: "+line,100,150);
+}
+int score=0;
+void keyPressed(){
+  int len=line.length();
+  if(key>='a'&&key<='z') line=line+key;
+  if(key>='A'&&key<='Z') line=line+key;
+  if(key==BACKSPACE&&len>0) line=line.substring(0,len-1);
+  if(key==ENTER){
+    if(line.equals(Q[Qi])==true){
+      score++;
+      Qi++;
+      line="";
+    }else score--;
+  }
+}
+```
+![7 (1)](https://user-images.githubusercontent.com/79676969/123265350-8b2a9380-d52d-11eb-9d47-f6361ee151dc.png)
 
 
 
